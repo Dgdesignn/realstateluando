@@ -29,7 +29,7 @@
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <span>Home</span>
                                 <i class='bx bx-home-alt-2'></i>
                             </a>
@@ -43,20 +43,21 @@
                         </li>
 
                         <li class="nav__item">
-                                <a href="#preco" class="nav__link">
+                                <a href="#value" class="nav__link">
                                     <span>Preços</span>
                                     <i class='bx bx-award'></i>
                                 </a>
                         </li>
                         <li class="nav__item">
-                                <a href="#contacto" class="nav__link">
+                                <a href="#contact" class="nav__link">
                                     <span>Contacto</span>
                                     <i class='bx bx-phone'></i>
                                 </a>
                         </li>
                     </ul>
                 </div>
-
+                <!-- Theme change button -->
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
                 <a href="" class="button nav__button">
                     Subscreva-te
                 </a>
@@ -111,14 +112,13 @@
 
                     </div>
 
-                    
                     <div class="home__images">
-                            <div class="home__orbe"></div>
-                        
-                            <div class="home__img">
-                                <img src="assets/img/home.jpg" alt="home">
-                            </div>
+                        <div class="home__orbe"></div>
+                    
+                        <div class="home__img">
+                            <img src="assets/img/home.jpg" alt="home">
                         </div>
+                    </div>
                 </div>
             </section>
 
@@ -143,20 +143,21 @@
             <!--==================== POPULAR ====================-->
             <section class="popular section" id="popular">
                 <div class="container">
-                    <section__subtitle>
-                        <span>Boas Ecolhas</span>
+                  
+                        <span class="section__subtitle">Boas Ecolhas</span>
                         <h2 class="section__title">
                             Residência mais popular
                         </h2>
+
                         <div class="popular_container swiper">
                             <div class="swiper-wrapper">
                                 <article class="popular__card swiper-slide">
                                     <img src="assets/img/popular1.jpg" alt="" class="popular__img">
                                     <div class="popular__data">
-                                        <h2 class="popular popular__price">
+                                        <h2 class="popular__price">
                                             146.500.00 <span>Kz</span>
                                         </h2>
-                                        <h3 class="populat__description">
+                                        <h3 class="popular__title">
                                             Condomínio Tuyeto
                                         </h3>
                                         <p class="popular__descroption">
@@ -166,60 +167,78 @@
                                 </article>
 
                                 <article class="popular__card swiper-slide">
-                                    <img src="assets/img/popular2.jpg" alt="" class="popular__img">
-                                    <div class="popular__data">
-                                        <h2 class="popular popular__price">
-                                            99.250.00 <span>Kz</span>
-                                        </h2>
-                                        <h3 class="populat__description">
-                                            Nova urbanização K9
-                                        </h3>
-                                        <p class="popular__descroption">
-                                            Rua Dg-Longo Daizo.
-                                            Angola - Luanda , Valod
-                                        </p>
-                                    </div>
+                                        <img src="assets/img/popular2.jpg" alt="" class="popular__img">
+                                        <div class="popular__data">
+                                            <h2 class="popular__price">
+                                                146.500.00 <span>Kz</span>
+                                            </h2>
+                                            <h3 class="popular__title">
+                                                Condomínio Tuyeto
+                                            </h3>
+                                            <p class="popular__descroption">
+                                                Rua Dg-Longo Daizo
+                                            </p>
+                                        </div>
                                 </article>
 
                                 <article class="popular__card swiper-slide">
-                                    <img src="assets/img/popular3.jpg" alt="" class="popular__img">
-                                    <div class="popular__data">
-                                        <h2 class="popular popular__price">230.000.50 <span>Kz</span></h2>
-                                        <h3 class="populat__description">
-                                            Jardim do Éden
-                                        </h3>
-                                        <p class="popular__descroption">
-                                            Rua Dg-Longo Daizo.
-                                            Angola - Luanda , Valod
-                                        </p>
-                                    </div>
+                                        <img src="assets/img/popular3.jpg" alt="" class="popular__img">
+                                        <div class="popular__data">
+                                            <h2 class="popular__price">
+                                                146.500.00 <span>Kz</span>
+                                            </h2>
+                                            <h3 class="popular__title">
+                                                Condomínio Tuyeto
+                                            </h3>
+                                            <p class="popular__descroption">
+                                                Rua Dg-Longo Daizo
+                                            </p>
+                                        </div>
                                 </article>
 
                                 <article class="popular__card swiper-slide">
-                                    <img src="assets/img/popular4.jpg" alt="" class="popular__img">
-                                    <div class="popular__data">
-                                        <h2 class="popular popular__price">450.350.50 <span>Kz</span></h2>
-                                        <h3 class="populat__description">
-                                            Centralidade do D6
-                                        </h3>
-                                        <p class="popular__descroption">
-                                            Rua Dg-Longo Daizo.
-                                            Angola - Luanda , Valod
-                                        </p>
-                                    </div>
+                                        <img src="assets/img/popular4.jpg" alt="" class="popular__img">
+                                        <div class="popular__data">
+                                            <h2 class="popular__price">
+                                                146.500.00 <span>Kz</span>
+                                            </h2>
+                                            <h3 class="popular__title">
+                                                Condomínio Tuyeto
+                                            </h3>
+                                            <p class="popular__descroption">
+                                                Rua Dg-Longo Daizo
+                                            </p>
+                                        </div>
                                 </article>
+
+                                <article class="popular__card swiper-slide">
+                                        <img src="assets/img/popular5.jpg" alt="" class="popular__img">
+                                        <div class="popular__data">
+                                            <h2 class="popular__price">
+                                                146.500.00 <span>Kz</span>
+                                            </h2>
+                                            <h3 class="popular__title">
+                                                Condomínio Tuyeto
+                                            </h3>
+                                            <p class="popular__descroption">
+                                                Rua Dg-Longo Daizo
+                                            </p>
+                                        </div>
+                                </article>
+
                             </div>
-                            <div class="buttons__slide">
-                                <div class="swiper-button-next">
-                                    <i class="bx bx-chevron-right"></i>
-                                </div>
-                                <div class="swiper-button-prev">
-                                        <i class="bx bx-chevron-left"></i>
-                                </div>
+                          
+                            <!---buttons slide-->
+                            <div class="swiper-button-next">
+                                <i class="bx bx-chevron-right"></i>
                             </div>
+                            <div class="swiper-button-prev">
+                                    <i class="bx bx-chevron-left"></i>
+                            </div>
+                        
                            
                         </div>
-                    </section__subtitle>
+                    
                 </div>
             </section>
 
@@ -438,7 +457,7 @@
                     </div>
                     <p class="subscribe__description">
                         Cadastra-te já e encontre casa com preços super 
-                        atrativo, temos casas bonitas para ti.
+                        atrativo, temo a casa ideial para ti.
                     </p>
                     <a href="" class="button subscribe__button">Cadastrar</a>
                 </div>
@@ -447,12 +466,88 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
-            
-        </footer>
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        imob <i class="bx bxs-home-alt-2"></i>
+                    </a>
+                    <p class="footer_description">
+                        O nosso proposito é fornecer casa de alta qualidade<br>
+                        para qualquer pessoa a um preço fovorável.
+                    </p>
+                </div>
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title"></h3>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link"></a></li>
+                            <li><a href="#" class="footer__link"></a></li>
+                            <li><a href="#" class="footer__link"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__content">
+                        <div>
+                            <h3 class="footer__title">Sobre</h3>
+                            <ul class="footer__links">
+                                <li><a href="#" class="footer__link">Aobre nós</a></li>
+                                <li><a href="#" class="footer__link">Futuro</a></li>
+                                <li><a href="#" class="footer__link">Novidades</a></li>
+                            </ul>
+                        </div>
 
+                        <div>
+                            <h3 class="footer__title">Empresa</h3>
+                            <ul class="footer__links">
+                                <li><a href="#" class="footer__link">Como nós trabalhamos</a></li>
+                                <li><a href="#" class="footer__link"></a>Qula nossa pulítica</li>
+                                <li><a href="#" class="footer__link"></a>Segurança</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="footer__title">Suporte</h3>
+                            <ul class="footer__links">
+                                <li><a href="#" class="footer__link">FAQs</a></li>
+                                <li><a href="#" class="footer__link">Central de suporte</a></li>
+                                <li><a href="#" class="footer__link">Contacta nos</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="footer__title">Siga-nos</h3>
+                            <ul class="footer__social">
+                               <a href="#" target="_blank" class="footer__social-link">
+                                   <i class="bx bxl-facebook-circle"></i>
+                               </a>
+                               <a href="#" target="_blank" class="footer__social-link">
+                                    <i class="bx bxl-instagram-alt"></i>
+                               </a>
+                               <a href="#" target="_blank" class="footer__social-link">
+                                    <i class="bx bxl-pinterest"></i>
+                               </a>
+                            </ul>
+                        </div>
+                </div>
+                    
+            </div>
+
+            <div class="div footer__info container">
+                <span class="footer__copy">
+                    &#169; Todos direitos reservado. Tuyetomaker
+                </span>
+                <div class="footer__privacity">
+                    <a href="#">Termos & Acordos</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </footer>
 
         <!--========== SCROLL UP ==========-->
 
+        <a href="#" class="scrollUp" id="scroll-up">
+            <i class="bx bx-chevrons-up"></i>
+        </a>
 
         <!--=============== SCROLLREVEAL ===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
