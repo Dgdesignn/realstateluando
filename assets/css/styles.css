@@ -531,8 +531,22 @@ button {
   height: 0;
   transition: all .25s ease;
 }
-
 /*Rotate icon and add shadows*/
+.accordion-open{
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
+
+.accordion-open .value__accordion-icon{
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
+
+.accordion-open .value__accordion-arrow{
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
+
+.accordion-open .value__accordion-arrow i{
+  transform:rotate(-180deg);
+}
 
 
 /*=============== CONTACT ===============*/
