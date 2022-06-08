@@ -12,12 +12,12 @@ window.addEventListener('scroll', scrollHeader);
 
 /*=============== SWIPER POPULAR ===============*/
 
-var swiperPopular = new Swiper(".popular_container", {
+var swiperPopular = new Swiper(".popular__container", {
     spaceBetween:32,
     grabCursor:true,
     centeredSlides:true,
     slidesPreView:'auto',
-    loop:true,
+    loop:false,
 
   navigation: {
     nextEl: ".swiper-button-next",

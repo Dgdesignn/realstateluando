@@ -121,6 +121,7 @@ body.dark-theme{
   --container-color: hsl(228, 16%, 12%);
 }
 
+
 /*========== 
     Color changes in some parts of 
     the website, in dark theme 
@@ -337,11 +338,11 @@ body.dark-theme{
 
 .home__search{
   background-color: var(--body-color);
-  padding: .35rem .35rem .35rem .75rem;
+  /*padding: .35rem .35rem .35rem .75rem;*/
   display: flex;
   align-items: center;
   border-radius: .75rem;
-  border: 3px solid var(--text-color-light);
+  /*border: 3px solid var(--text-color-light);*/
   margin-bottom: 2rem;
 }
 
@@ -409,7 +410,12 @@ body.dark-theme{
 }
 
 /*=============== BUTTON ===============*/
-
+.home__search .button{
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .button{
   display: inline-flex;
   background: linear-gradient(
@@ -425,9 +431,35 @@ body.dark-theme{
   cursor:pointer;
 }
 
+.btn-sell{
+  margin-top:2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+      background: linear-gradient(
+        hsl(228, 66%, 53%),
+          hsl(228, 66%, 48%));
+}
+
+.dark-theme .btn-sell{
+  background: linear-gradient(
+    hsl(228, 57%, 35%),
+      hsl(228, 65%, 32%));
+}
+
+.dark-theme .btn-sell:hover{
+  background: linear-gradient(
+    hsl(228, 66%, 53%),
+      hsl(228, 66%, 48%));
+}
+
 
 .button:hover{
   box-shadow: 0 4px 12px hsla(228, 66%, 45%, .25);
+  background: linear-gradient(
+    hsl(228, 57%, 35%),
+      hsl(228, 65%, 32%));
 }
 
 .nav__button{ 
@@ -455,8 +487,14 @@ body.dark-theme{
 /*=============== POPULAR ===============*/
 .popular__container{
   padding:1rem 0 5rem;
-  
 }
+
+.flex{display: flex;}
+.flex-j-center{justify-content: center;}
+.flex-a-center{ align-items: center;}
+.flex-column{flex-direction: column;}
+.flex-row{flex-direction: row;}
+
 
 .popular__card{
   width: 290px;
@@ -468,6 +506,7 @@ body.dark-theme{
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
   margin-bottom: 1.2rem;
   margin-right: 1rem;
+
 }
 
 .popular__img{
@@ -950,9 +989,11 @@ body.dark-theme{
     height: 264px;
   }
 
+
   .logos__container{
-    gap: 2rem 1rem
+    gap: 2rem 1rem;
   }
+
 
   .popular__card{
     width: 230px;
@@ -981,6 +1022,12 @@ body.dark-theme{
   }
 }
 
+@media screen and (min-width:600px){
+  .popular__card{
+    width: 270px !important;
+  }
+
+}
 
 /* For medium devices */
 
@@ -995,7 +1042,7 @@ body.dark-theme{
 @media screen and (min-width: 576px){
 
   .nav__menu{
-    widows: 342px;
+    width: 342px ;
   }
 
   .home__search{
