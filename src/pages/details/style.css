@@ -47,7 +47,7 @@ TUYETOMAKER -------------------------------------------------
 
 /*book css------------------------*/
 .book-house{
-    position: absolute;
+    position: fixed;
     top:0;
     bottom: 0;
     right: 0;
@@ -144,11 +144,12 @@ TUYETOMAKER -------------------------------------------------
 .open__book{
     width: 100%;
     padding: 1rem;
-    position: absolute;
-    bottom: 7rem;
+    position: fixed;
+    bottom: 0rem;
 
     display: flex;
     justify-content: space-between;
+    background-color: var(--body-color);
 }
 
 .open__book p{
@@ -161,11 +162,56 @@ TUYETOMAKER -------------------------------------------------
     width: 80%;
 }
 
+/*--------------------------------------------------
+details
+--------------------------------------------------*/
+
+.detail__boxs{
+   
+    border-radius: .3rem;
+    margin: 1rem;
+}
+
+.box-detail{
+    border: 1px solid var(--text-color-light);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.detail__boxs .details__title{
+    margin-top: 2rem;
+    font-weight: var(--font-medium);
+    font-size: var(--h1-font-size);
+}
+
+.detail__boxs .details_subdescription{
+    margin-bottom: 1rem;
+}
+
+.rules li{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.rules li.mark{
+    color: var(--second-color);
+}
+
+.politic{
+    margin-bottom: 6rem;
+}
+
+.marked{
+  color: var(--title-color)
+}
+
+
 
 /*=======  BREAK PONTS - MEDIA QUERIES ======*/
  
   @media screen and (max-width:1023px){
     .nav__menu{
-       
+       display: none;
     }
 }
