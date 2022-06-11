@@ -81,6 +81,11 @@ TUYETOMAKER -------------------------------------------------
     margin-bottom: 2rem;
 }
 
+.book__date-input input{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
 .book__date-input div{
     border:1px solid var(--text-color);
     padding: .8rem;
@@ -127,7 +132,7 @@ TUYETOMAKER -------------------------------------------------
     transition: .2s;
     margin-top:.2rem;
     border-radius: .5rem;
-
+    color: var(--title-color)
 }
 .cancel__modal:hover{
     background-color: var(--first-color-lighten);
