@@ -1,0 +1,171 @@
+/* 
+=============================================================
+TUYETOMAKER -------------------------------------------------
+=============================================================*/
+/*Swipper csss*/
+.slide{
+    width: 100%;
+    height: 320px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*house details*/
+  .house-details .details{
+      padding: 2rem;
+  }
+
+
+/*book css------------------------*/
+.book-house{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:var(--body-color);
+    padding:2rem;
+    z-index: var(--z-fixed);
+
+    transition: .2s;
+}
+
+.hiden{
+    display: none;
+}
+
+/*book modal*/
+.book__body{
+    margin-top:3rem;
+}
+
+.book__title{
+    font-size: var(--h3-font-size);
+    color:var(--title-color);
+    margin-bottom: 2rem;
+}
+
+.book__date-input{
+    display: flex;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.book__date-input div{
+    border:1px solid var(--text-color);
+    padding: .8rem;
+    cursor: pointer;
+}
+
+
+.book__price-table_top{
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.book__price-table_top p{
+    color: var(--title-color)
+}
+
+.book__price-table_bottom{
+    text-decoration: underline;
+    font-weight: var(--font-semi-bold);
+    color: var(--second-color)
+}
+
+.book__button-reserve{
+    
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+}
+
+ .cancel__modal{
+    width: 100%;
+    font-weight: var(--font-medium);
+    padding: .6rem;
+    text-align: center;
+    cursor:pointer;
+    transition: .2s;
+    margin-top:.2rem;
+    border-radius: .5rem;
+
+}
+.cancel__modal:hover{
+    background-color: var(--first-color-lighten);
+    
+}
+
+
+.book-button{
+   width: 100%;
+   justify-content: center;
+}
+
+/*open book box*/
+.open__book{
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    bottom: 7rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.open__book p{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    color:var(--text-color);
+}
+
+.button-open__book{
+    width: 80%;
+}
+
+
+/*=======  BREAK PONTS - MEDIA QUERIES ======*/
+ 
+  @media screen and (max-width:1023px){
+    .nav__menu{
+       
+    }
+}

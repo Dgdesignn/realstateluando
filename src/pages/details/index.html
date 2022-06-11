@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Details | Imob</title>
 
-    
+     
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
 
@@ -18,6 +18,9 @@
 
         <!--=======================  MAIN CSS ====================================-->
         <link rel="stylesheet" href="../../assets/css/main.css">
+
+          <!--=======================  MY CSS ====================================-->
+          <link rel="stylesheet" href="./style.css">
 
 
 </head>
@@ -32,29 +35,35 @@
                     <div class="nav__menu">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="#home" class="nav__link active-link">
+                                <a href="../../../index.html#home" class="nav__link active-link">
                                     <span>Home</span>
                                     <i class='bx bx-home-alt-2'></i>
                                 </a>
                             </li>
     
                             <li class="nav__item">
-                                    <a href="#popular" class="nav__link">
+                                    <a href="../../../index.html#popular" class="nav__link">
                                         <span>Residências</span>
                                         <i class='bx bx-building-house'></i>
                                     </a>
                             </li>
     
                             <li class="nav__item">
-                                    <a href="#value" class="nav__link">
+                                    <a href="../../../index.html#value" class="nav__link">
                                         <span>Valores</span>
                                         <i class='bx bx-award'></i>
                                     </a>
                             </li>
                             <li class="nav__item">
-                                    <a href="#contact" class="nav__link">
+                                    <a href="../../../index.html#contact" class="nav__link">
                                         <span>Contacto</span>
                                         <i class='bx bx-phone'></i>
+                                    </a>
+                            </li>
+                            <li class="nav__item">
+                                    <a href="#" class="nav__link">
+                                        <span>Como funciona</span>
+                                        <i class='bx bx-wrench'></i>
                                     </a>
                             </li>
                         </ul>
@@ -70,6 +79,95 @@
                 </nav>
         </header>
     
+        <main class="details">
+
+            <div class="box-details">
+                <aside class="house-details">
+                    
+                    <!---Slide section-->
+                    <section class="slide">
+                            <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                          <img src="../../assets/img/popular1.jpg" alt="" srcset="">
+                                      </div>
+                                      <div class="swiper-slide">
+                                            <img src="../../assets/img/popular2.jpg" alt="" srcset="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                                <img src="../../assets/img/popular3.jpg" alt="" srcset="">
+                                            </div>
+                                        <div class="swiper-slide">
+                                                <img src="../../assets/img/popular10.jpg" alt="" srcset="">
+                                            </div>
+                                        <div class="swiper-slide">
+                                                <img src="../../assets/img/popular20.jpg" alt="" srcset="">
+                                            </div>
+                                        <div class="swiper-slide">
+                                                <img src="../../assets/img/popular30.jpg" alt="" srcset="">
+                                            </div>
+                                        <div class="swiper-slide">
+                                                <img src="../../assets/img/popular40.jpg" alt="" srcset="">
+                                            </div>
+                                        <div class="swiper-slide">
+                                                <img src="../../assets/img/popular50.jpg" alt="" srcset="">
+                                            </div>
+                                      
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                            </div>
+                    </section>
+
+                    <!--Section details-->
+                    <section class="details">
+                        detaisl
+                    </section>
+                </aside>
+                <!---BOOK PRICES-->
+                <aside class="book-house book__modal hiden">
+                   <div class="book__body">
+                       <div class="book__title">
+                           <p>78.000.00 - 120.000.00 <b>Kz</b> por mês</p>
+                       </div>
+
+                       <div class="book__date-input">
+                           <div class="data__in">
+                               <span>Data de entrada</span>
+                                <input type="date" name="dataIn" id="">
+                           </div>
+                           <div class="data__out">
+                               <span> Data de saida</span>
+                               <input type="date" name="dataOut" id="">
+                           </div>
+                       </div>
+
+                       <div class="book__price-table">
+                           <div class="book__price-table_top">
+                               <p>Total a pagar pelo pedido de reserva <span class="icon bx bx-error-circle"></span> </p>
+                                <p>120.000.00 <b>Kz</b></p>
+                            </div>
+                           <div class="book__price-table_bottom">
+                                Inclui um mês de renda antecipada e a taxa de.
+                           </div>
+                       </div>
+
+                       <div class="book__button-reserve">
+                           <button class="book-button button">Pedir para reservar</button>
+                           <a href="#" class="close__modal cancel__modal">Não reservar</a>
+                       </div>
+                   </div>
+                </aside>
+            </div>
+            <!---active book modal--->
+            <div class="open__book">
+               <div>
+                    <p>78.000.00-120.000.00 Kz</p>
+                    <span>por mês</span>
+               </div>
+                <button class="button-open__book button">Pedir para reservar</button>
+            </div>
+        </main>
 
         <!--=============== SCROLLREVEAL ===============-->
         <script src="../../assets/js/scrollreveal.min.js"></script>
@@ -79,5 +177,7 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="../../assets/js/main.js"></script>
+
+        <script src="./detail.js"></script>
 </body>
 </html>

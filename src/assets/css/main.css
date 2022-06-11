@@ -261,6 +261,7 @@ body.dark-theme{
       padding: 1.30rem 3rem;
       border-radius: 1.25rem;
       transition: .4s;
+     
     }
     .nav__list{
       display: flex;
