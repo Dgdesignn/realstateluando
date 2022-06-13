@@ -47,11 +47,6 @@ TUYETOMAKER -------------------------------------------------
 
 /*book css------------------------*/
 .book-house{
-    position: fixed;
-    top:0;
-    bottom: 0;
-    right: 0;
-    left: 0;
     background-color:var(--body-color);
     padding:2rem;
     z-index: var(--z-fixed);
@@ -136,7 +131,7 @@ TUYETOMAKER -------------------------------------------------
 }
 .cancel__modal:hover{
     background-color: var(--first-color-lighten);
-    
+    color: #000;
 }
 
 
@@ -183,7 +178,7 @@ details
     margin-top: 1rem;
 }
 
-.detail__boxs .details__title{
+.details__title{
     margin-top: 2rem;
     font-weight: var(--font-medium);
     font-size: var(--h1-font-size);
@@ -218,5 +213,59 @@ details
   @media screen and (max-width:1023px){
     .nav__menu{
        display: none;
+    }
+    .book-house{
+        position: fixed;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media screen and (min-width:1023px){
+
+    .slide{
+        border-radius: .8rem;
+        overflow: hidden;
+    }
+    .box-details{
+       width: 1040px;
+       display: flex;
+       margin:0 auto;
+       margin-top:6rem;
+       gap:2rem;
+
+    }
+
+    .house-details{
+        width: 60%;
+    }
+    .prices{
+        position: relative;
+    }
+
+    .hiden{
+        display: block;
+    }
+    .book-house{
+        position: fixed;
+        top: 6rem;
+        background-color:var(--body-color);
+        border:1px solid var(--text-color-light);
+        border-radius: .6rem;
+        padding:2rem;
+        z-index: auto;
+        height: 520px;
+        width: 380px;
+    }
+    .open__book{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 420px){
+    .slide{
+        height: 427px;
     }
 }
