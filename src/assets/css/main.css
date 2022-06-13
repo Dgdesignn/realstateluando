@@ -362,6 +362,146 @@ body.dark-theme{
 
 
 
+/*=============== FOOTER ===============*/
+.footer__container{
+  row-gap: 2.5rem;
+}
+
+.footer__logo{
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  display: inline-flex;
+  column-gap: .25rem;
+  margin-bottom: .75
+}
+
+
+.footer__logo i{
+  font-size: 1.5rem;
+}
+
+.footer__description
+,.footet__link{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.footer__content{
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap:2.5rem 4rem;
+}
+
+.footer__title{
+  font-size:var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.footer__links{
+  row-gap:.5rem;
+}
+
+.footer__link{
+  color:var(--text-color);
+  transition:.3s;
+}
+
+.footer__link:hover{
+  color:var(--title-color);
+}
+
+
+.footer__social{
+  display:flex;
+  column-gap:1rem;
+}
+
+.footer__social-link{
+  font-size: 1.25rem;
+   color: var(--text-color);
+   transition: .3s;
+}
+
+.footer__social-link:hover{
+  color:var(--title-color);
+}
+
+.footer__info,
+.footer__privacity{
+  display: flex;
+}
+
+.footer__info{
+  margin-top:5.5rem;
+  padding-bottom: 6rem;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+
+.footer_copy,
+.footer__privacity{
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color:var(--text-color);
+}
+
+.footer__privacity{
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+
+
+/*=============== SCROLL BAR ===============*/
+
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(228, 8%, 76%);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: hsl(228, 8%, 64%);
+  border-radius: .5rem;  
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(228, 8%, 54%);  
+}
+
+/*=============== SCROLL UP ===============*/
+
+.scrollUp{
+  position: fixed;
+  right: 1rem;
+  bottom:-8rem;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 12px hsla(228, 66%, 45%, .1);
+  display: inline-flex;
+  padding: .35rem;
+  border-radius: .25rem;
+  color:var(--title-color);
+  z-index: var(--z-tooltip);
+  transition: .3s;
+}
+
+.scrollUp:hover{
+  transition:translateY(-.25rem);
+  color:var(--first-color);
+}
+
+
+/* Show Scroll Up*/
+.show-scroll{
+  bottom:8rem;
+  transition: .3s;
+}
+
+
+
+
 /*
 =================================
 ======== BRAKPONITS==============
@@ -426,6 +566,36 @@ body.dark-theme{
   .scroll-header .active-link{
     color: var(--first-color);
   }
+
+  
+  .footer__content{
+    grid-template-columns: repeat(4, max-content);
+  }
+
+  .footer__title{
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__links{
+    row-gap: 1rem;
+    line-height: 1.9;
+  }
+
+  .footer__info{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+
+  .show-scroll{
+    bottom: 3rem;
+    right: 3rem;
+  }
+
+  .footer_description{
+    line-height: 1.6;
+    margin-top:1.5rem;
+  }
 }
 
 
@@ -434,6 +604,15 @@ body.dark-theme{
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media screen and (min-width:576px){
+
+ /* .footer__content{
+    grid-template-columns: repeat(3, max-content)
+  }*/
+
+
 }
 
 

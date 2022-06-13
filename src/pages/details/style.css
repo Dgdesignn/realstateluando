@@ -236,6 +236,7 @@ details
        margin-top:6rem;
        gap:2rem;
 
+
     }
 
     .house-details{
@@ -256,16 +257,40 @@ details
         border-radius: .6rem;
         padding:2rem;
         z-index: auto;
-        height: 520px;
+        height: 494px;
         width: 380px;
+    }
+
+    .book__button-reserve{
+        bottom: 2rem;
+        padding: 1rem;
+    }
+    .book__body{
+        margin-top:0;
     }
     .open__book{
         display: none;
     }
+    .details__title{
+        font-size: var(--h3-font-size)
+    }
+    .details__description,
+    .details_subdescription{
+        line-height: 1.5;
+    }
+
+    .politic{
+        margin-bottom: 0;
+    }
+
 }
 
 @media screen and (min-width: 420px){
     .slide{
         height: 427px;
     }
+
+    .footer__content{
+        gap:2.5rem;
+      }
 }
