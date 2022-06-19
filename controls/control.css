@@ -1,0 +1,24 @@
+.header{
+    padding: 0.5rem;
+}
+
+#option-btn{
+    font-size: 1.25rem;
+    color:var(--text-color);
+    cursor: pointer;
+    transition: .3s;
+
+    background: none;
+    border: none;
+}
+
+#option-btn:hover{
+    color: var(--first-color);
+  }
+  
+
+@media screen and (max-width:1023px){
+    .nav__menu{
+        width: 210px;
+    }
+}

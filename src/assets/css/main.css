@@ -101,7 +101,7 @@ button {
 
 .change-theme{
   font-size: 1.25rem;
-  color:#fff;
+  color:var(--text-color);
   cursor: pointer;
   transition: .3s;
 }
