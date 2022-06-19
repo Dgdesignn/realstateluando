@@ -34,33 +34,70 @@
                         <ul class="nav__list">
                             <li class="nav__item">
                                 <a href="#home" class="nav__link active-link">
-                                    <span>Home</span>
+                                    
                                     <i class='bx bx-message-square-dots'></i>
                                 </a>
+                                <p>0</p>
                             </li>
     
 
                             <li class="nav__item">
-                                    <a href="#" class="nav__link">
+                                    <a href="#contact" class="nav__link">
                                         <span>Como funciona</span>
                                         <i class='bx bx-bell'></i>
                                     </a>
+                                    <p>0</p>
                             </li>
                         </ul>
                     </div>
                     <!-- Theme change button -->
+
                     <i class="bx bx-moon change-theme" id="theme-button"></i>
 
                     <!---Logout button-->
-                    <button type="button" id="option-btn">
+                    <a href="../src/pages/access/access.html" id="option-btn">
                         <i class='bx bx-power-off' ></i>
-                    </button>
+                    </a>
                   
                 </nav>
             </header>
 
+            <!--================information=======================-->
+            <section id="information">
+                <div class="card__profile">
+                    <img src="../src/assets/img/user-profile.png" alt="" srcset="">
+                    <article>
+                        <p class="user-name">Dagnaldo Alexandre</p>
+                        <p class="user-contact">
+                            244 931974210 | dgalexandre@dg.com
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-
+            <!--================ USER STATE =======================-->
+            <section class="user__state">
+                <div class="user_sate-item">
+                    <i class='bx bx-calendar-check'></i>
+                    <p>Entrada</p>
+                    <p>21-05-22</p>
+                </div>
+                <div class="user_sate-item">
+                        <i class='bx bx-reset'></i>
+                    <p>Prolongar</p>
+                </div>
+                <div class="user_sate-item">
+                        <i class='bx bx-info-circle'></i>
+                    <p>Cancelar</p>
+                </div>
+                <div class="user_sate-item">
+                    <i class='bx bx-calendar-check'></i>
+                    <article>
+                        <p>Saída</p>
+                        <p>21-05-22</p>
+                    </article>
+                </div>
+            </section>
 
 
 
@@ -72,5 +109,8 @@
     
             <!--=============== MAIN JS ===============-->
             <script src="../src/assets/js/main.js"></script>
+
+            <!--================== MY SCRIPT  ========================-->
+            <script src="controls.js"></script>
 </body>
 </html>
