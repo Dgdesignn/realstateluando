@@ -73,7 +73,7 @@
     margin-left: 2px;
     height: 100px;
     padding:1rem;
-    background-color: var( --container-color);
+    background: var(--border-color);
     transition: .3s;
 }
 
@@ -91,6 +91,56 @@
 .user__state .user_sate-item p{
     text-align: center;
 }
+
+
+/*Main section*/
+#main__user-content{
+    width: 90%;
+    margin: 0 auto;
+    margin-top:2rem;
+}
+
+/* agent clients*/
+.user-card__profile{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background: var(--border-color);
+    border-radius:3px;
+    padding: 1rem;
+    margin-bottom: 6px;
+}
+
+.user-card__profile:last-child{
+    margin-bottom: 7.5rem;
+}
+
+.user-card__profile:hover{
+    background-color: var(--container-color)
+}
+
+
+.user-card__profile img{
+    width: 72px;
+    border-radius: 75px;
+    object-fit: cover;
+}
+
+.user-nome-span{
+    color: var(--title-color)
+}
+
+.state__check{
+    display: flex;
+    gap: 1rem;
+    margin-top:.4rem; 
+}
+
+
+/*home section style*/
+
+/**Break-points*/
 
 @media screen and (max-width:1023px){
     .nav__menu{
