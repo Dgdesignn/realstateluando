@@ -10,3 +10,49 @@ menuItem.forEach(item=>{
 })
 
 
+/*=============================================
+============SWIPER===========================================*/
+var swiperPopular = new Swiper(".popular__container", {
+    spaceBetween:32,
+    grabCursor:true,
+    centeredSlides:true,
+    slidesPreView:'auto',
+    loop:false,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+/*=======================================================
+client and house button switch
+*/
+
+const clientButtonSwitch = document.querySelector('.client__button')
+const houseButtonSwitch = document.querySelector('.houses__button')
+const boxAgentClient = document.querySelector('.agent-users')
+const boxAgentHouse = document.querySelector('.agent-house')
+
+
+clientButtonSwitch.addEventListener('click',()=>{
+
+     if(boxAgentClient.classList.contains('hide')){
+        boxAgentClient.classList.remove('hide')
+        boxAgentHouse.classList.add('hide')   
+     }
+    
+})
+
+
+houseButtonSwitch.addEventListener('click',()=>{
+
+    if(boxAgentHouse.classList.contains('hide')){
+        boxAgentHouse.classList.remove('hide')   
+        boxAgentClient.classList.add('hide')
+    }
+   
+})
+
+
+

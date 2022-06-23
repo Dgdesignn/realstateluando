@@ -1,5 +1,6 @@
 .hide{
     display: none;
+    transition: .2s;
 }
 .header{
     padding: 0.5rem;
@@ -25,6 +26,29 @@
 
 .nav__lis{
 
+}
+
+.section{
+    padding: 0;
+}
+
+/*
+buttons clients and houses
+*/
+
+.switch__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+    margin-bottom: 2rem;
+}
+
+.button_{
+    border:1px solid #ddd;
+    padding: .8rem 1.7rem;
+    background: transparent;
+    color: var(--title-color);
 }
 
 
