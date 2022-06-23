@@ -77,24 +77,26 @@
 
             <!--================ USER STATE =======================-->
             <section class="user__state">
-                <div class="user_sate-item">
+                <div class="user_sate-item user_sate-item__ associationNow">
                     <i class='bx bx-calendar-check'></i>
-                    <p>Entrada</p>
-                    <p>21-05-22</p>
+                    <p>Associar</p>
+                    <p>Cliente</p>
                 </div>
                 <div class="user_sate-item">
                         <i class='bx bx-reset'></i>
-                    <p>Prolongar</p>
+                        <p>45</p>
+                    <p>Clientes</p>
                 </div>
-                <div class="user_sate-item">
+                <div class="user_sate-item ">
                         <i class='bx bx-info-circle'></i>
-                    <p>Cancelar</p>
+                    <p>4</p>
+                    <p>Casa</p>
                 </div>
-                <div class="user_sate-item">
+                <div class="user_sate-item user_sate-item__">
                     <i class='bx bx-calendar-check'></i>
                     <article>
-                        <p>Saída</p>
-                        <p>21-05-22</p>
+                        <p>Cancelar</p>
+                        <p>Cliente</p>
                     </article>
                 </div>
             </section>
@@ -259,6 +261,55 @@
                 </section>
             </main>
 
+
+            <div class="modal_ hide">
+                <button class="close_modal">
+                    <i class='bx bx-x '></i>
+                </button>
+                <div class="modal_content_">
+                    <div class="modal_header">
+                        <h3 class="modal_title">Associar Cliente</h3>
+                    </div>
+                    <div class="modal_body">
+                        <div class="identify_user">
+                            <div class="input__">
+                                    <i class='bx bx-user'></i>
+                                    <input type="text" name="client_user" placeholder="@exemplonomedocliente">
+                                    <!---i class='bx bxs-check-circle'></i>--->
+                            </div>
+                            <span class="alert hide">Something is wrong</span>
+                        </div>
+                        <div class="select_house">
+                            <div class="button__association hide">
+                                <button class="assossion_house">
+                                        <i class='bx bx-home'></i>
+                                    <span> Associar casa</span>
+                                </button>
+                                <span class="advice"><i class='bx bx-error-circle'></i> Está opção é opcional</span>
+                            </div>
+
+                            <div class="select">
+                                <div>
+                                    <i class='bx bx-home'></i>
+                                    <select name="my_house" id="select_houses">
+                                        <option value="" selected>Associa ele a uma casa</option>
+                                        <option value="">Vivenda no mussulo</option>
+                                        <option value="">Casa de paria</option>
+                                        <option value="">Vivenda no mussulo</option>
+                                    </select>
+                                </div>
+                                <button class="cancel_assiciation">
+                                        <i class='bx bx-x'></i>
+                                </button>
+                            </div>
+
+                            <button class="fish_ass button">
+                               <p> Finalizar</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!--=============== SCROLLREVEAL ===============-->
             <script src="../src/assets/js/scrollreveal.min.js"></script>

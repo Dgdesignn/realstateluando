@@ -56,3 +56,43 @@ houseButtonSwitch.addEventListener('click',()=>{
 
 
 
+/*styling modal association button*/
+
+const btnAssociaton = document.querySelector('.button__association')
+const selectHouse = document.querySelector('.select')
+const cancelAssBtn = document.querySelector('.cancel_assiciation')
+
+btnAssociaton.addEventListener('click',()=>{
+    btnAssociaton.classList.add('hide');
+    selectHouse.classList.remove('hide');
+})
+
+
+cancelAssBtn.addEventListener('click',()=>{
+    btnAssociaton.classList.remove('hide');
+    selectHouse.classList.add('hide');
+})
+
+const modalBox = document.querySelector('.modal_')
+const closeBtn = document.querySelector('.close_modal')
+const btnAssNow = document.querySelector('.associationNow')
+
+closeBtn.addEventListener('click',()=>{
+    modalBox.classList.add('hide');
+})
+
+btnAssNow.addEventListener('click',()=>{
+    modalBox.classList.remove('hide');
+})
+
+
+
+
+
+
+
+
+
+
+
+

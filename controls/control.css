@@ -1,6 +1,7 @@
 .hide{
-    display: none;
+    display: none !important;
     transition: .2s;
+
 }
 .header{
     padding: 0.5rem;
@@ -31,6 +32,155 @@
 .section{
     padding: 0;
 }
+
+/*
+modal
+*/
+.close_modal{
+    background: transparent;
+    color: var(--container-color);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.close_moda i:hover{
+    color: var(--second-color)
+}
+.modal_{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_content_{
+    width: 90%;
+    background-color: var(--container-color);
+    min-height: 210px;
+    border-radius: 6px;
+    padding: 1.3rem ;
+}
+
+.modal_title{
+    color: var(--title-color);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.identify_user{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.identify_user .input__{
+    width: 100%;
+    border: 1px solid var(--text-color-light);
+    padding: .4rem .4rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.input__ input{
+    width: calc(100% - 2rem);
+    padding: .6rem 0;
+}
+
+
+.input__ i{
+    font-size: 1.5rem; 
+}
+
+ .alert{
+    font-size: .8rem;
+    margin-top: .36rem;
+    color: var(--second-color);
+}
+
+/*user assotion house*/
+.select_house{
+    width:100%;
+    margin-top:1.4rem;
+}
+
+.assossion_house{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+    transition: all .3s;
+    color: var(--second-color);
+}
+
+.assossion_house:hover,
+.cancel_assiciation:hover{
+    background-color: var(--second-color);
+    color: var(--border-color);
+}
+
+
+.select_house .advice{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    margin-top:.3rem;
+    display: block;
+}
+
+.select{
+    width: 100%;
+    border: 1px solid var(--text-color-light);
+    border-radius: .3rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.select div{
+    padding:0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select i{
+    font-size: 1.3rem;
+}
+
+#select_houses{
+    width: 90%;
+    padding: 1rem;
+    border: none;  
+    outline: none;
+}
+
+.cancel_assiciation{
+    padding: .8rem;
+}
+
+
+.fish_ass.button{
+    background: var(--second-color);
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 
 /*
 buttons clients and houses
@@ -101,7 +251,7 @@ buttons clients and houses
     transition: .3s;
 }
 
-.user__state .user_sate-item:hover{
+.user__state .user_sate-item__:hover{
     background-color: var(--first-color-alt);
     color:var(--title-color);
     font-weight:600;
