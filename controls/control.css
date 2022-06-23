@@ -38,14 +38,11 @@ modal
 */
 .close_modal{
     background: transparent;
-    color: var(--container-color);
+    color: #fff;;
     font-size: 2rem;
     padding: 1rem;
 }
 
-.close_moda i:hover{
-    color: var(--second-color)
-}
 .modal_{
     background-color: rgba(0, 0, 0, .8);
     position: fixed;
@@ -89,11 +86,14 @@ modal
     display: flex;
     align-items: center;
     gap: 12px;
+    background: transparent;
 }
 
 .input__ input{
     width: calc(100% - 2rem);
     padding: .6rem 0;
+    background: transparent;
+    color: var(--text-color)
 }
 
 
@@ -120,6 +120,7 @@ modal
     font-size: 1rem;
     transition: all .3s;
     color: var(--second-color);
+    background: var(--border-color);
 }
 
 .assossion_house:hover,
@@ -145,6 +146,8 @@ modal
     justify-content: space-between;
     align-items: center;
 
+    overflow: hidden;
+
 }
 
 .select div{
@@ -163,10 +166,14 @@ modal
     padding: 1rem;
     border: none;  
     outline: none;
+    background: transparent;
+    color: var(--text-color);
 }
 
 .cancel_assiciation{
     padding: .8rem;
+    background: var(--container-color);
+    color: var(--text-color)
 }
 
 
