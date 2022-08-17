@@ -126,3 +126,22 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__title`)
 sr.reveal(`.home__description`, {delay:500})
+
+
+
+/*==================== SHOW AND HIDE LOGIN GUEST MODAL ==========================*/
+const closeModalGuest = document.querySelector('.close-login-guest')
+const openModalGuest = document.querySelector('.open-login-guest')
+const modalGuest = document.querySelector('.modal-guest')
+
+closeModalGuest.addEventListener('click',()=>{
+    modalGuest.classList.add('hide-login-guest');
+    modalGuest.classList.remove('show-login-guest');
+})
+
+openModalGuest.addEventListener('click',()=>{
+    modalGuest.classList.add('show-login-guest');
+    modalGuest.classList.remove('hide-login-guest');
+})
+
+

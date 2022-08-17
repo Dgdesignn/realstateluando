@@ -4,9 +4,9 @@
 /*=============== HOME ===============*/
 
 .home{
-  background: linear-gradient(170deg,
-                hsl(0,0%,22%) 0%,
-                hsl(0,0%,6%) 30%);
+  background: linear-gradient(40deg,
+                #468fde,
+                #f1f8ff);
   padding-bottom: 0;         
 }
 
@@ -27,7 +27,7 @@
 }
 
 .home__description{
-  color: var(--text-color-light);
+  color: #fff;
   margin-bottom: 2rem;
 }
 
@@ -73,7 +73,7 @@
 
 .home__value-description{
   display: flex;
-  color: var(--text-color-light);
+  color: #fff;
   font-size: var(--smaller-font-size)
 }
 

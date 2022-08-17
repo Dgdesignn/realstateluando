@@ -19,11 +19,11 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./src/assets/css/styles.css">
 
-        <!--=============== CSS ===============-->
+        <!--=============== CSS GALERIA ===============-->
         <link rel="stylesheet" href="./src/assets/css/galeria.css">
 
-      
-        
+        <!--================= LOGIN-GUEST MODAL =========================-->
+        <link rel="stylesheet" href="src/assets/css/guest-login.css">
         <title>Imob</title>
 
     </head>
@@ -100,6 +100,11 @@
                             <input type="search" placeholder="Pesquisar a localização..." class="home__search-input">
                             --><a href="./src/pages/access/register.html" class="button">Criar Uma Conta</a>
                         </form>
+
+                        <p class="open-login-guest-p">
+                            Podes entrar como visatante sem precisar de criar uma conta 
+                            <a href="#" class="open-login-guest">Clica aqui</a>
+                        </p>
                         <div class="home__value">
                             <div>
                                 <h1 class="home__value-number">
@@ -479,6 +484,37 @@
             </section>
         </main>
 
+        <!--=================== MODAL GUEST ====================-->
+        <div class="modal-guest hide-login-guest">
+            
+            <p class="close-login-guest">
+                <span>x</span>
+            </p>
+
+            <div class="modal-content">
+                <header class="modal-header flex flex-column flex-a-center">
+                <h2 class="logo second-text-color">Logar com visitante</h2>
+                <p class="sign">
+                    
+                            Faça login de uma formar rápida sem a necessidade de criar uma conta
+                    
+                </p>
+                </header>
+                <form action="../../../controls/index.html">
+                    <div class="input-field">
+                        <label for="">Usuário</label>
+                        <input type="text" autofocus placeholder="Digite o nome do usuário" name="userName" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="email@dg.com" name="password" required>
+                    </div>
+
+                    <button class="button solid full-width"><span>Entrar</span></button>
+                    <p class="create-count">Se ainda não possuis uma conta, <a href="./register.html" alt="Criar uma conta" title="Criar uma conta" class="font-wight-1 second-text-color">click aqui</a> para criar uma</p>
+                </form>
+            </div>
+        </div>
 
         <!--============== MODAL GALERIA ======================-->
         <section class="galeria-master">
