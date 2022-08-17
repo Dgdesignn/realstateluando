@@ -1,0 +1,147 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ img{
+    width: 100%;
+*}
+*/
+
+.show-galeria{
+    display: flex !important;
+}
+
+.galeria ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem
+
+    
+}
+
+.galeria{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .8);
+
+    z-index: 9999;
+}
+
+
+.stacks{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.stack{
+    width: 8rem;
+    transition: .4s;
+    position: relative;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.stack-display{
+    top: 0;
+    width: 100%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+.stack-display:hover{
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+
+.body-galeria{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-galeria{
+    background: #eee;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.close-galeria:hover{
+    background: #aaa;
+
+}
+
+.body-galeria .display{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: .9rem;
+}
+
+
+.body-galeria .stack-itens {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.body-galeria .stack-itens li img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.body-galeria .stack-itens li{
+    width: 3rem;
+    height: 3rem;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.body-galeria .stack-itens li:hover{
+    opacity: .5;
+}
+
+
+#display-img{
+    transition: .4s;
+}
+
+
+
+@media screen and (min-width:720px){
+    .body-galeria{
+        width: 620px;
+        object-fit: contain;
+    }
+
+    #display-img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}

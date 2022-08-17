@@ -19,6 +19,9 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./src/assets/css/styles.css">
 
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./src/assets/css/galeria.css">
+
       
         
         <title>Imob</title>
@@ -162,10 +165,18 @@
                     <h2 class="section__title"> Residência mais populars<span>.</span></h2>
 
                     <div class="popular__container t swiper">
-                        <div class="swiper-wrapper" >
-                            <article class="popular__card swiper-slide">
+
+                        <div class="swiper-wrapper stacks" >
+                            
+                            <article class="popular__card swiper-slide stack">
                                 <img src="./src/assets/img/popular1.jpg" alt="" class="popular__img">
-                                
+                                <div class="stack-display">
+                                    <span data-source="./src/assets/img/popular30.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular40.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular50.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular10.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular20.jpg" hidden></span>
+                                </div>
                                 <div class="popular__data flex flex-column flex-a-center">
                                     <h2 class="popular__price">
                                             146.500.00 <span>Kz</span>
@@ -179,12 +190,17 @@
                                     <a href="./src/pages/details/index.html" class="button btn-sell">Mais detalhes</a>
 
                                 </div>
-                                
                             </article>
 
-                            <article class="popular__card swiper-slide">
+                            <article class="popular__card swiper-slide stack">
                                 <img src="./src/assets/img/popular2.jpg" alt="" class="popular__img">
-                                
+                                <div class="stack-display">
+                                    <span data-source="./src/assets/img/popular30.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular40.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular50.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular10.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular20.jpg" hidden></span>
+                                </div>
                                 <div class="popular__data flex flex-column flex-a-center">
                                     <h2 class="popular__price">
                                             146.500.00 <span>Kz</span>
@@ -201,9 +217,15 @@
                                 
                             </article>
 
-                            <article class="popular__card swiper-slide">
+                            <article class="popular__card swiper-slide stack">
                                 <img src="./src/assets/img/popular3.jpg" alt="" class="popular__img">
-                                
+                                <div class="stack-display">
+                                    <span data-source="./src/assets/img/popular30.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular40.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular50.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular10.jpg" hidden></span>
+                                    <span data-source="./src/assets/img/popular20.jpg" hidden></span>
+                                </div>
                                 <div class="popular__data flex flex-column flex-a-center">
                                     <h2 class="popular__price">
                                             146.500.00 <span>Kz</span>
@@ -457,6 +479,29 @@
             </section>
         </main>
 
+
+        <!--============== MODAL GALERIA ======================-->
+        <section class="galeria-master">
+                <div class="galeria ">
+                        <div class="body-galeria">
+                            <p class="close-galeria">
+                                <span>x</span>
+                            </p>
+                            <div class="display">
+                                <img id="display-img" src="" alt="" srcset="">
+                            </div>
+                           
+                            <div class="stack-itens">
+                                <ul>
+                                   
+                                </ul>
+                            </div>
+                
+                        </div>
+                </div>
+
+        </section>
+
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
             <div class="footer__container container grid">
@@ -550,5 +595,6 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="./src/assets/js/main.js"></script>
+        <script src="./src/assets/js/galeria.js"></script>
     </body>
 </html>
