@@ -20,6 +20,7 @@
   --body-color: #fff;
   --container-color: #fff;
 
+
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
@@ -127,6 +128,17 @@ body.dark-theme{
     the website, in dark theme 
 ==========*/
 
+
+.dark-theme .home{
+  background: linear-gradient(170deg,
+  hsl(0,0%,22%) 0%,
+  hsl(0,0%,6%) 30%);
+  padding-bottom: 0;         
+}
+
+.dark-theme .open-login-guest-p{
+  color: #fff;
+}
 
 .dark-theme .home__search,
 .dark-theme .swiper-button-next,
