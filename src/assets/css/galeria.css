@@ -126,6 +126,19 @@
     opacity: .5;
 }
 
+.galeria-descricao{
+    width: 100%;
+    padding: .5rem;
+
+    background-color: rgb(28, 84, 237);
+}
+
+.galeria-descricao p{
+    
+    color: #fff;
+    font-size: .9rem;
+}
+
 
 #display-img{
     transition: .4s;
